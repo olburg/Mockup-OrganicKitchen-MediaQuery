@@ -1,0 +1,185 @@
+body {
+  margin: 0 auto;
+  background-color: rgb(70, 66, 66);
+  padding: 10px 0 0 0;
+}
+
+body * {
+  box-sizing: border-box;
+}
+
+.smoosi {
+  width: 100%;
+  margin: 0 auto;
+}
+
+.wrapper {
+  padding: 20px 20px;
+  margin: 30px 10px;
+}
+
+.welcome {
+  background-color: aliceblue;
+  width: 100%;
+  height: 500px;
+  text-align: left;
+  margin: 20 auto;
+  font-family: Open Sans, sans-serif;
+  padding: 20px 20px;
+}
+
+.tittel {
+  color: red;
+  font-size: 42px;
+  font-family: "Archivo Black", sans-serif;
+}
+
+p {
+  font-size: 20px;
+  font-family: Open Sans, sans-serif;
+  letter-spacing: 1px;
+  padding-bottom: 10px;
+}
+
+.description {
+  font-family: Open Sans, sans-serif;
+  margin-bottom: 20px;
+}
+
+.button {
+  background-color: red;
+  padding: 10px;
+  color: white;
+  text-decoration: none;
+  display: inline-block;
+}
+
+.foto img {
+  width: 100%;
+  margin: 0 auto;
+  margin-top: 10px;
+}
+
+.images01,
+.images02,
+.images03 {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  overflow: hidden;
+}
+
+.kitchen {
+  width: 100%;
+  padding: 30px 20px;
+  color: white;
+  background-color: red;
+  margin-top: 10px;
+}
+
+.header {
+  font-family: Roboto, sans-serif;
+  font-size: 30px;
+  margin-top: 30px;
+}
+
+.text {
+  font-family: Open sans, sans-serif;
+  font-size: 16px;
+  text-align: left;
+  letter-spacing: 1px;
+  margin: 10px 0px;
+}
+
+@media (min-width: 768px) {
+  .welcome {
+    width: 100%;
+    height: 350px;
+    padding: 30px;
+  }
+
+  .foto {
+    width: 100%;
+    /* height: 100%; */
+    display: flex;
+    flex-direction: row-reverse;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+
+  .images01,
+  .images02,
+  .images03,
+  .kitchen {
+    width: 48%;
+    height: 100%;
+  }
+
+  .kitchen {
+    padding: 20px 50px;
+    height: 540px;
+  }
+
+  .wrapper {
+    margin: 30px 10px;
+    width: 760px;
+    padding: 0px 10px;
+  }
+
+  .images01 {
+    order: 1;
+    background-position: top;
+  }
+}
+
+
+@media (min-width: 1024px) {
+  .wrapper {
+    width: 980px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-around;
+  }
+
+  .welcome {
+    width: 30%;
+    height: 590px;
+    margin: 10px;
+    order: 1;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-items: flex-start;
+    font-size: 14px;
+  }
+
+  .kitchen {
+    padding: 20px 20px;
+    order: 0;
+  }
+
+  .foto {
+    width: 65%;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: flex-start;
+  }
+  .images01,
+  .images02,
+  .images03,
+  .kitchen {
+    display: inline-block;
+    height: 380px;
+    width: 300px;
+    background-size: auto;
+    background-position: center center;
+  }
+}
+
+@media (min-width: 1280px) {
+  .wrapper {
+    width: 1024px;
+  }
+}
